@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+header img {
+    margin: 30px 0 30px 150px;
+}
+
+nav {
+    margin: 10px 0;
+    width: 33%;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+a:hover {
+    color: black;
+}
+
+main {
+    background-image: url("images/Object.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#register {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#register section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+#register span {
+    text-transform: uppercase;
+}
+
+button {
+    color: white;
+    width: 33.3%;
+    margin: 0 33.3%;
+    background-color: darkorchid;
+    padding: 10px 0;
+    border-radius: 40px;
+    border: 3px solid darkorchid;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    box-shadow: 1px 1px 1px 1px rgb(46, 43, 43);
+}
+
+button:hover {
+    background-color: rgb(153, 50, 204 , 0);
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 100px;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 span {
+    text-transform: capitalize;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#portofolios {
+    display: flex;
+    margin-bottom: -40px;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+#portofolios h3 {
+    text-transform: capitalize;
+}
+
+#portofolios h4 {
+    font-size: small;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.726);
+    font-style: italic;
+}
+
+#bruce {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#qoute {
+    background-color:darkorchid;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+#qoute div {
+    width: 60%;
+    display: flex;
+    margin: 100px 20%;
+}
+
+#info-qoute {
+    margin-left: 40px;
+    padding: 0;
+}
+
+#info-qoute q {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+#info-qoute h4 {
+    margin: 55px 0 0;
+    text-transform: capitalize;
+}
+
+#info-qoute p {
+    margin: 25px 0 0;
+    color: rgba(255, 255, 255, 0.726);
+    font-style: italic;
+}
+
+#tutorials {
+    width: 100vw;
+    margin: 80px 0;
+}
+
+#tutorials h2 {
+    text-align: center;
+    color: rgb(0 0 0 / 55%);
+}
+
+#tutorials span {
+    text-transform: lowercase;
+}
+
+#tutorials-list {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#imges-1, #imges-2, #imges-3, #imges-4 {
+    height: 154px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+}
+
+#imges-1 {
+    background-image: url(images/9.png);
+}
+
+#imges-2 {
+    background-image: url(images/7.png);
+}
+
+#imges-3 {
+    background-image: url(images/8.png);
+}
+
+#imges-4 {
+    background-image: url(images/6.png);
+}
+
+.play {
+    margin: 0 auto;
+}
+
+.tots {
+    width: 255px;
+}
+
+.information {
+    padding-left: 10px;
+}
+
+.information h3 {
+    color: black;
+    text-transform: capitalize;
+}
+
+.information p {
+    color: rgb(0 0 0 / 55%);
+}
+
+.author {
+    display: flex;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+}
+
+.author h4 {
+    color: blueviolet;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating img {
+    height: 20px;
+    margin-top: 15px;
+}
+
+.rating span {
+    color: blueviolet;
+    margin-top: 17px;
+}
+
+#memberships {
+    text-align: center;
+    background-color:rgb(34, 28, 71);
+    width: 100vw;
+    padding: 50px 0;
+}
+
+#members-list {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 60px;
+}
+
+#memberships button {
+    width: 15%;
+}
+
+#faq {
+    width: 100vw;
+    padding: 30px 0 80px;
+}
+
+#faq h2 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0;
+}
+
+#faq section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+#faq div {
+    width: 35%;
+}
+
+#faq h3 {
+    color: black;
+}
+
+#faq p {
+    color: rgb(0 0 0 / 55%);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(34, 28, 71);
+    padding: 60px 0 40px;
+    margin-top: 50px;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 100px;
+}
+
+footer div {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook-icon, .twitter-icon, .instagram-icon {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    background-color: rgb(34, 28, 71);
+}
+
+.facebook-icon:hover, .twitter-icon:hover, .instagram-icon:hover {
+    color: #1877f2;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+footer span {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.726);
+}
