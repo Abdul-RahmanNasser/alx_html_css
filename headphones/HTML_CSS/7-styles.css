@@ -19,15 +19,20 @@
     src: url(SourceSansPro-Light.otf);
 }
 
+
 /* variables */
 :root {
     --red: #FF6565;
     --white: white;
     --display: flex;
+    --space-evenly: space-evenly;
     --width: 100%;
+    --flex-direction: column;
     --align-items: center;
     --text-align: center;
+    --background-size: cover;
     --font-size: small;
+    --size: xx-large;
 }
 
 /* Media query for mobile version */
@@ -56,6 +61,10 @@
     }
 }
 
+.fa-xmark {
+    display: none;
+}
+
 /* Common Styles */
 * {
     box-sizing: border-box;
@@ -78,7 +87,8 @@ a {
     text-decoration: none;
 }
 
-header, header ul, #register div, #portofolios {
+header, header ul, #register div, #portofolios, #Our-Results, #percentages, #percentages div,
+#Contact-us, form, footer, footer section {
     display: var(--display);
 }
 
@@ -86,36 +96,60 @@ a:hover, .portofolio i {
     color: var(--red);
 }
 
-a, #register div, button {
+a, #register div, button, #Our-Results, footer i {
     color: var(--white);
 }
 
-header, main, #register, #what-we-do {
+#portofolios, #percentages {
+    justify-content: var(--space-evenly);
+}
+
+header, main, #register, #what-we-do, #Our-Results, #percentages, #Contact-us, footer {
     width: var(--width);
 }
 
-#register div, #what-we-do {
+#register div, #what-we-do, #Our-Results, #percentages, #percentages div, #Contact-us {
     text-align: var(--text-align);
 }
 
-header, #register div, #portofolios {
+#register div, #Our-Results, #percentages div, #Contact-us, form, footer {
+    flex-direction: var(--flex-direction);
+}
+
+header, #register div, #portofolios, form, footer {
     align-items: var(--align-items);
 }
 
-#register span, button, #register p, .portofolio span {
+#register, #Our-Results {
+    background-size: var(--background-size);
+}
+
+#register span, button, #register p, .portofolio span, #Our-Results p {
     font-size: var(--font-size);
+}
+
+#what-we-do h2, #percentages h3 {
+    font-size: var(--size);
 }
 
 button, #register p {
     font-family: ExtraLight;
 }
 
-header ul li a, h1, #what-we-do h2 {
+header ul li a, h1, #what-we-do h2, #Our-Results h2, #Contact-us h2 {
     font-family: Semibold;
 }
 
-#what-we-do p, .portofolio h3, .portofolio span {
+#register span, #percentages h3 {
+    font-family: Regular;
+}
+
+#what-we-do p, .portofolio h3, .portofolio span, #Our-Results p, #percentages span, input, footer span {
     font-family: Light;
+}
+
+button, input {
+    border: none;
 }
 
 /* header styles */
@@ -161,7 +195,6 @@ header ul {
 header ul li a {
     font-size: xx-small;
 }
-
 /* register styles */
 main {
     z-index: 0;
@@ -171,18 +204,12 @@ main {
     background-image: url(headphones_hero_1.jpg);
     background-repeat: no-repeat;
     height: 600px;
-    background-size: cover;
 }
 
 #register div {
     padding: 200px 0;
     width: 60%;
     margin-left: 20%;
-    flex-direction: column;
-}
-
-#register span {
-    font-family: Regular;
 }
 
 button {
@@ -195,7 +222,6 @@ button {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     text-transform: uppercase;
-    border: none;
 }
 
 /* what we do section */
@@ -213,7 +239,6 @@ button {
 
 #portofolios {
     padding-bottom: 80px;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -227,4 +252,95 @@ button {
 
 .portofolio h3 {
     margin: 20px 0;
+}
+
+/* Our results */
+#Our-Results {
+    background-image: url(headphones_hero_2.jpg);
+    padding: 80px 0;
+}
+
+#Our-Results p {
+    padding: 40px 220px;
+}
+
+#percentages {
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+#percentages div {
+    background: rgba(0, 0, 0, 0) url(pentagone.png) no-repeat center;
+    padding-top: 80px;
+    width: 150px;
+    background-size: 150px;
+}
+
+#percentages span {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+/* Contact us */
+#Contact-us {
+    padding: 80px 0;
+}
+
+form {
+    gap: 20px;
+    margin: 30px 0;
+}
+
+input {
+    width: 30%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    padding-left: 0;
+    font-weight: bolder;
+}
+
+/* footer */
+footer {
+    background-color: rgb(27, 27, 57);
+    padding-bottom: 30px;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer section {
+    gap: 600px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+footer i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+footer span {
+    color: rgb(94, 91, 91);
+    font-size: x-small;
+}
+
+/* Animations for "What we do" section */
+#portofolios .portofolio {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#portofolios .portofolio:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+/* Animations for "Our results" section */
+#percentages div {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#percentages div:hover {
+    transform: scale(1.2) rotate(-5deg);
+    opacity: 0.8;
 }
